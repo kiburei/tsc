@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tsc</title>
+    <title>The Shirt Company</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <%= javascript_pack_tag 'hello_vue' %>
   </head>
 
   <body>
     <%= yield %>
   </body>
+<footer class="page-footer font-small blue pt-4 mt-4">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="text-uppercase">The Shirt Company</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-uppercase">Partner Brands</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Narok New York</a>
+                    </li>
+                    <li>
+                        <a href="#!">Sao Satorial</a>
+                    </li>
+                    <li>
+                        <a href="#!">Tayler Gray</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href=""> The Shirt Company </a>
+    </div>
+</footer>
 </html>

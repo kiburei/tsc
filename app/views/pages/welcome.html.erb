@@ -1,4 +1,31 @@
-<h1>Pages#welcome</h1>
-<div id="app">
-  {{ message }}
+<h1>The Shirt Company</h1>
+<div id="brands">
+  <h6>Our Brands</h6>
+    <div class="row">
+    <div v-for="brand in brands">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{brand.name}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{brand.tagline}}</h6>
+              <p class="card-text">{{brand.desc}}</p>
+              <a href="#" class="card-link">Shop</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div id="categories">
+  <div class="row categories">
+    <div v-for="category in categories">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body tab">
+            <p style="color: white; opacity: 1;">{{category.name}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

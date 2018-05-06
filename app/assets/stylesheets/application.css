@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+body {
+  padding: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.categories {
+  text-align: center;
+  padding: 20px;
+}
+.tab {
+  font-size: 15px;
+  padding: 50px;
+  background-image: url('shirt');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}

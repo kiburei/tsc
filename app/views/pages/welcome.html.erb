@@ -18,10 +18,12 @@
 <div id="categories">
   <div class="row categories">
     <div v-for="category in categories">
-      <div class="col-md-3">
-           <img v-bind:src="category.image" v-bind:alt="category.name" class="category-image">
-           <div class="centered">{{category.name}}</div>
-      </div>
+      <a v-bind:href="'/categories/' + category.id">
+        <div class="col-md-3">
+             <img v-bind:src="category.image" v-bind:alt="category.name" class="category-image">
+             <div class="centered">{{category.name}}</div>
+        </div>
+      </a>
     </div>
   </div>
 </div>

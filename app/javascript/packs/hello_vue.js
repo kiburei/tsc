@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     el: '#categories',
     data: {
       categories: [
-        {name: 'Suits', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-zBHOPyCRV1EZo_Hj10MbIP5cHPt1iPcTQGbYTsw3Wrd_uk7'},
-        {name: 'Shirts', image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
-        {name: 'Ties', image: 'https://www.ties.com/blog/wp-content/uploads/2014/08/necktie_care_01.jpg'},
-        {name: 'Cufflinks', image: 'https://d3h6k4kfl8m9p0.cloudfront.net/stories/VM4sGUf7b9nJMkXCTR.qow.jpg'},
+        {id: 1, name: 'Suits', image: 'https://www.cheatsheet.com/wp-content/uploads/2015/10/Row-of-men-suit-jackets.jpg'},
+        {id: 2, name: 'Shirts', image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+        {id: 3, name: 'Ties', image: 'https://i.pinimg.com/originals/99/9d/ec/999dec96b1fbf64a9956ef1a5d1cfe17.jpg'},
+        {id: 4, name: 'Cufflinks', image: 'https://d3h6k4kfl8m9p0.cloudfront.net/stories/VM4sGUf7b9nJMkXCTR.qow.jpg'},
       ]
     }
   })

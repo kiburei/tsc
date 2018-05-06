@@ -14,7 +14,7 @@
  *= require_self
  */
 body {
-  padding: 50px;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,8 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .categories {
   text-align: center;
-  padding: 20px;
-}
+  background-color: black;
+  }
 .tab {
   font-size: 15px;
   padding: 50px;
@@ -36,10 +36,14 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 200px;
 }
 .category-image {
-  opacity: 0.8;
-  max-height: 100px;
+  max-height: 250px;
+  max-width: 400px
 }
 .centered {
+  padding: 50px;
+  opacity: 0.8;
+  background-color: black;
+  font-size: 50px;
   color: white;
   position: absolute;
   top: 50%;

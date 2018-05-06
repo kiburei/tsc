@@ -27,4 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
+  var app = new Vue({
+    el: '#shop-products',
+    data: {
+      products: [
+        {name: 'Shirt', price: 2000},
+        {name: 'Shirt', price: 2000},
+        {name: 'Shirt', price: 2000},
+        {name: 'Shirt', price: 2000},
+        {name: 'Shirt', price: 2000},
+        {name: 'Shirt', price: 2000},
+      ]
+    }
+  })
+
 })

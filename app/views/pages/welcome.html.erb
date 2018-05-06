@@ -7,9 +7,9 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">{{brand.name}}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">{{brand.tagline}}</h6>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">{{brand.tagline}}</h6> -->
               <p class="card-text">{{brand.desc}}</p>
-              <a href="#" class="card-link">Shop</a>
+                <%= link_to '', store_path(1), class: "fa fa-shopping-bag" %>
             </div>
           </div>
         </div>

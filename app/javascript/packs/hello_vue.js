@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     el: '#brands',
     data: {
       brands: [
-        {name: 'Narok', tagline: 'New York', image: 'https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwid3NrEwe7aAhWHVBQKHYOiBj8QjRx6BAgBEAU&url=https%3A%2F%2Fwww.menswearhouse.com%2Fmens-suits%2Fslim-fit-extra-trim-suits%2Ftommy-hilfiger-blue-slim-fit-suit-38XM38XN14&psig=AOvVaw2KKhsHt9tbzeRrmDSW_e0u&ust=1525607653707705', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt' },
-        {name: 'Sao Satorial', tagline: '', image: 'logo', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt' },
-        {name: 'TAYLER GRAY', tagline: '', image: 'logo', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt' },
+        {id: 2, name: 'Sao Satorial', tagline: '', image: 'http://www.pamm.org/sites/default/files/styles/og_image/public/sartorial_logo_grayscale.jpg?itok=YuYW-iSJ', desc: 'Expect more from your clothes.' },
+        {id: 1, name: 'Narok', tagline: 'New York', image: 'https://pbs.twimg.com/profile_images/731126847132598274/g0ZsHVVc_400x400.jpg', desc: 'For all your high end made to fit suits' },
+        {id: 3, name: 'TAYLER GRAY', tagline: '', image: 'https://www.48hourslogo.com/48hourslogo_data/2018/01/25/69471_1516872559.jpg', desc: 'A classic never goes out of style.' },
       ]
     }
   })
@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     el: '#categories',
     data: {
       categories: [
-        {name: 'Suits'},
-        {name: 'Shirts'},
-        {name: 'Ties'},
-        {name: 'Cufflinks'},
+        {name: 'Suits', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-zBHOPyCRV1EZo_Hj10MbIP5cHPt1iPcTQGbYTsw3Wrd_uk7'},
+        {name: 'Shirts', image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+        {name: 'Ties', image: 'https://www.ties.com/blog/wp-content/uploads/2014/08/necktie_care_01.jpg'},
+        {name: 'Cufflinks', image: 'https://d3h6k4kfl8m9p0.cloudfront.net/stories/VM4sGUf7b9nJMkXCTR.qow.jpg'},
       ]
     }
   })
@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
     el: '#shop-products',
     data: {
       products: [
-        {name: 'Shirt', price: 2000},
-        {name: 'Shirt', price: 2000},
-        {name: 'Shirt', price: 2000},
-        {name: 'Shirt', price: 2000},
-        {name: 'Shirt', price: 2000},
-        {name: 'Shirt', price: 2000},
+        {id: 1, name: 'Shirt', price: 4000},
+        {id: 2, name: 'Suit', price: 56000},
+        {id: 3, name: 'Blazer', price: 25000},
+        {id: 4, name: 'Tie', price: 2000},
+        {id: 5, name: 'Two Piece', price: 45000},
+        {id: 6, name: 'Three Piece', price: 75000},
       ]
     }
   })

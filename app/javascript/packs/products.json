@@ -1,0 +1,14 @@
+products: [
+  {id: 1, name: 'Shirt', price: 4000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 2, name: 'Shirt', price: 2000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 3, name: 'Shirt', price: 3000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 4, name: 'Shirt', price: 4000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 5, name: 'Shirt', price: 6000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 6, name: 'Shirt', price: 54000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 6, name: 'Shirt', price: 45000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 7, name: 'Shirt', price: 40200, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 8, name: 'Shirt', price: 44000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 9, name: 'Shirt', price: 44000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+  {id: 10, name: 'Shirt', price: 34000, image: 'http://static1.businessinsider.com/image/599b401cb0e0b593758b58e0-800/allgingham-hanging.jpg'},
+
+],

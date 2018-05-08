@@ -1,0 +1,36 @@
+<h1><%= @category.name %></h1>
+<!-- <img src="<%= @category.image %>" alt=""> -->
+<div class="row">
+  <div id="shop-products">
+    <div class="col-md-10">
+      <div class="row">
+        <div v-for="product in products">
+          <div class="col-md-4">
+            <div class="card">
+              <div v-if="product.name === 'Shirt'">
+                <img class="category-image" v-bind:src="product.url" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">KES: {{product.price}}</p>
+                  <button v-on:click="addToCart(product)">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div v-if="items.length > 0">
+        <div class="cart">
+          <h5>Cart({{items.length}})</h5>
+          <ul v-for="item in items">
+            <li>{{item.name}} - {{item.price}}</li>
+          </ul>
+          <p>Total: {{sum}}</p>
+          <button v-on:click="checkout">Pay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

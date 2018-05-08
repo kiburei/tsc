@@ -1,15 +1,21 @@
 import Vue from 'vue/dist/vue.esm'
-import axios from 'axios';
+// import axios from 'axios-on-rails'
+import axios from 'axios'
 
+let token = document.getElementsByName('csrf-token')[0].getAttribute('content')
+axios.defaults.headers.common['X-CSRF-Token'] = token
+axios.defaults.headers.common['Accept'] = 'application/json'
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  const url = "http://localhost:3000/products"
 
   var app = new Vue({
     el: '#brands',
     data: {
       brands: [
-        {id: 2, name: 'Sao Satorial', tagline: '', image: 'http://www.pamm.org/sites/default/files/styles/og_image/public/sartorial_logo_grayscale.jpg?itok=YuYW-iSJ', desc: 'Expect more from your clothes.' },
-        {id: 1, name: 'Narok', tagline: 'New York', image: 'https://pbs.twimg.com/profile_images/731126847132598274/g0ZsHVVc_400x400.jpg', desc: 'For all your high end made to fit suits' },
+        {id: 1, name: 'Sao Satorial', tagline: '', image: 'http://www.pamm.org/sites/default/files/styles/og_image/public/sartorial_logo_grayscale.jpg?itok=YuYW-iSJ', desc: 'Expect more from your clothes.' },
+        {id: 2, name: 'Narok', tagline: 'New York', image: 'https://pbs.twimg.com/profile_images/731126847132598274/g0ZsHVVc_400x400.jpg', desc: 'For all your high end made to fit suits' },
         {id: 3, name: 'TAYLER GRAY', tagline: '', image: 'https://www.48hourslogo.com/48hourslogo_data/2018/01/25/69471_1516872559.jpg', desc: 'A classic never goes out of style.' },
       ]
     }
@@ -30,15 +36,37 @@ document.addEventListener('DOMContentLoaded', () => {
   var app = new Vue({
     el: '#shop-products',
     data: {
-      products: [
-        {id: 1, name: 'Shirt', price: 4000},
-        {id: 2, name: 'Suit', price: 56000},
-        {id: 3, name: 'Blazer', price: 25000},
-        {id: 4, name: 'Tie', price: 2000},
-        {id: 5, name: 'Two Piece', price: 45000},
-        {id: 6, name: 'Three Piece', price: 75000},
-      ]
+      products: [],
+      items: [],
+    },
+    mounted() {
+      axios.get(url)
+    },
+    methods: {
+      addToCart: function(product) {
+        this.items.push(product)
+      },
+      checkout: function () {
+        // alert
+      },
+      getProducts: function() {
+        axios.get(url).then(response => {
+          this.products = response.data
+        })
+      }
+    },
+    computed: {
+      sum: function () {
+        var itemCost = this.items.map(x => parseInt(x.price))
+        console.log(itemCost)
+        const reducer = (itemCost, x) => itemCost + x
+        return itemCost.reduce(reducer)
+      }
+    },
+    created: function() {
+      this.getProducts()
     }
   })
+
 
 })
